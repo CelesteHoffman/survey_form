@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="surveystyle.css">
+    <title>FreeCodeCamp Survey form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey form</h1>
+      <form id="survey-form" action="#" method="post">
+        <p id="description"> Let us know how we can improve our services! </p>
+
+    <div>
+      <label for="name" id="name-label">*Name:</label>
+      <input id="name" type="text" name="name" placeholder="Enter yor name" required>
+      </div>
+      
+    <div>
+        <label for="email" id="email-label">*Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div>
+        <label for="number" id="number-label">*Age</label>
+        <input id="number" type="number" min="1" max="130" name="Age" placeholder="Age" required>
+        </div>
+
+      <div>
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown" class="dropdown">
+          <option disabled value>Please choose an option</option>
+          <option value="Student">Student</option>
+          <option value="Fulltimejob">Full time job</option>
+          <option value="Fulltimelearner">Full time learner</option>
+          <option value="Prefernottosay">Prefer not to say</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <p>How likely is it that you would recommend freecodecamp to a friend?</p>
+        <!-- Radio buttons and checkboxes are labeled separately. Can't assign a label for the entire group.
+        Observe - labels are missing-->
+        <ul id="rating">
+          <li><input type="radio" name="recommend" value="Definitely">Definitely</li>
+          <li><input type="radio" name="recommend" value="Maybe">Maybe</li>
+          <li><input type="radio" name="recommend" value="Not sure">Not sure</li>
+        </ul>
+      </div>
+
+      <div>
+        <p>What do you like most in FCC:</p>
+        <select id="preferences" name="like-most" class="dropdown">
+          <option disabled value> Select an option </option>
+          <option value="Challenges"> Challenges </option>
+          <option value="Projects"> Projects </option>
+          <option value="Community"> Community </option>
+          <option value="Open Source"> Open Source </option>
+        </select>
+
+      </div>
+
+      <div>
+        <p>Things that should be improved in the future (Check all that apply):</p>
+        <ul id="improve">
+          <li><input type="checkbox" name="improve" value="Front-End Projects">Front-End projects</li>
+          <li><input type="checkbox" name="improve" value="Back-End Projects"> Back-End Projects </li>
+          <li><input type="checkbox" name="improve" value="Data Visualization"> Data Visualization </li>
+          <li><input type="checkbox" name="improve" value="Challenges"> Challenges </li>
+          <li><input type="checkbox" name="improve" value="Open Source Community"> Open Source Community </li>
+          <li><input type="checkbox" name="improve" value="Gitter help rooms"> Gitter help rooms </li>
+          <li><input type="checkbox" name="improve" value="Videos"> Videos </li>
+          <li><input type="checkbox" name="improve" value="City Meetups"> City Meetups </li>
+          <li><input type="checkbox" name="improve" value="Wiki"> Wiki </li>
+          <li><input type="checkbox" name="improve" value="Forum"> Forum </li>
+          <li><input type="checkbox" name="improve" value="Additional Courses"> Additional Courses </li>
+        </ul>
+      </div>
+
+      <div>
+        <label for="comments"> Any Comments or Suggestions? </label>
+        <textarea id="comments" form="survey-form" name="Comments" placeholder="Enter comments here..."></textarea>
+      </div>
+
+      <div>
+        <input type="submit" id="submit">
+      </div>
+
+    </form>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+
+
+</body>
+</html>
